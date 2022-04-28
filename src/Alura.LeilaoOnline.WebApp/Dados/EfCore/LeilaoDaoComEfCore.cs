@@ -3,12 +3,14 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Alura.LeilaoOnline.WebApp.Dados
+//System.Data - Ado .NET
+//System.Data.SqlClient - provider Sql Server
+namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
 {
-    public class LeilaoDao
+    public class LeilaoDaoComEfCore : ILeilaoDao
     {
         AppDbContext _context;
-        public LeilaoDao()
+        public LeilaoDaoComEfCore()
         {
             _context = new AppDbContext();
         }
