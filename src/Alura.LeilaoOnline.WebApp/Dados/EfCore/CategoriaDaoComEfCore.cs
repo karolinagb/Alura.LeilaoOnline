@@ -14,17 +14,32 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
             _context = context;
         }
 
-        public Categoria ConsultaCategoriaPorId(int id)
+
+        public Categoria BuscarPorId(int id)
         {
             return _context.Categorias
                 .Include(c => c.Leiloes)
                 .First(c => c.Id == id);
         }
 
-        public IEnumerable<Categoria> ConsultaCategorias()
+        public IEnumerable<Categoria> BuscarTodos()
         {
             return _context.Categorias
                 .Include(c => c.Leiloes);
+        }
+        public void Alterar(Categoria obj)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Excluir(Categoria obj)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Incluir(Categoria obj)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
