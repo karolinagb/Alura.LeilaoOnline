@@ -27,19 +27,5 @@ namespace Alura.LeilaoOnline.WebApp.Dados.EfCore
             return _context.Categorias
                 .Include(c => c.Leiloes);
         }
-        public void Alterar(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Excluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Incluir(Categoria obj)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

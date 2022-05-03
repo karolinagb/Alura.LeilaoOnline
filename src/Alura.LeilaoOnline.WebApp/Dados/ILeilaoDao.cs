@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Alura.LeilaoOnline.WebApp.Dados
 {
-    public interface ILeilaoDao : IDao<Leilao>
+    public interface ILeilaoDao : ICommand<Leilao>, IQuery<Leilao>
     {
         
     }
